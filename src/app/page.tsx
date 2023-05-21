@@ -4,7 +4,7 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import { Typography, Button } from "@mui/material";
 import Link from "next/link";
-import {MainHeading, StyledButton, SubHeading} from "./page.styled";
+import { MainHeading, StyledButton, SubHeading } from "./page.styled";
 
 export default function Home() {
   return (
