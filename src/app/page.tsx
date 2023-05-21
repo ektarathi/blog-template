@@ -1,42 +1,29 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+"use client";
+
+import Image from "next/image";
+import styles from "./page.module.css";
+import { Typography, Button } from "@mui/material";
+import Link from "next/link";
+import {MainHeading, StyledButton, SubHeading} from "./page.styled";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
+    <main className={styles.main} data-testid="main-section">
       <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+        <Typography variant="h2" component={"h3"}>
+          <MainHeading data-testid="main-heading">Travel With Us</MainHeading>
+        </Typography>
+
+        <Typography variant="h6" component="h6">
+          <SubHeading data-testid="sub-heading">
+            Explore the world in any direction
+          </SubHeading>
+        </Typography>
+
+        <StyledButton>
+          <Button>Buy Now</Button>
+          <Button> Ways to travel</Button>
+        </StyledButton>
       </div>
 
       <div className={styles.grid}>
@@ -91,5 +78,5 @@ export default function Home() {
         </a>
       </div>
     </main>
-  )
+  );
 }

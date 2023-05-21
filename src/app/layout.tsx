@@ -31,6 +31,8 @@ export default function RootLayout({
   children,
   emotionCache = clientSideEmotionCache,
 }: LayoutProps) {
+
+  console.log("testing", lightTheme);
   return (
     <html lang="en">
       <body className={inter.className}>
