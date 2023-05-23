@@ -9,7 +9,7 @@ import rightImage from "../../../public/images/sho-hatakeyama-117306-unsplash-12
 
 const AboutUs = () => {
   return (
-    <Box data-testid="about-us" mt={10} id="about">
+    <Box data-testid="about-us" mt={5} id="about">
       <Container>
         <Typography variant="h4" component="h1">
           <MainHeading data-testid="heading">Our Journal</MainHeading>
