@@ -1,11 +1,11 @@
 import * as React from "react";
+import Image from "next/image";
+
 import { Box, Typography, Container, Grid } from "@mui/material";
-import { MainHeading, SubTitle, SectionText } from "./page.styled";
+import { MainHeading, SubTitle, SectionText } from "./about.styled";
 import topImage from "../../../public/images/khatam-tadayon-107740-1200x796.jpg";
 import leftImage from "../../../public/images/luca-bravo-121931-unsplash-1200x800.jpg";
 import rightImage from "../../../public/images/sho-hatakeyama-117306-unsplash-1200x800.jpg";
-
-import Image from "next/image";
 
 const AboutUs = () => {
   return (
