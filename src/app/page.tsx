@@ -11,13 +11,11 @@ import {
   OutlinedButton,
   ColouredButton,
 } from "./page.styled";
-import NavBar from "./components/NavBar";
 
 export default function Home() {
   return (
     <>
       <StyledWrapper>
-        <NavBar />
         <main className={styles.main} data-testid="main-section">
           <div className={styles.center}>
             <Typography variant="h2" component={"h3"}>

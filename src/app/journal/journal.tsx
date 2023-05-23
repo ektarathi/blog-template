@@ -2,7 +2,7 @@ import * as React from "react";
 import Image from "next/image";
 
 import { Box, Typography, Container, Grid } from "@mui/material";
-import { MainHeading, SubTitle, SectionText } from "./journal.styled";
+import { MainHeading, SubTitle, InfoContent } from "./journal.styled";
 import topImage from "../../../public/images/khatam-tadayon-107740-1200x796.jpg";
 import leftImage from "../../../public/images/luca-bravo-121931-unsplash-1200x800.jpg";
 import rightImage from "../../../public/images/sho-hatakeyama-117306-unsplash-1200x800.jpg";
@@ -31,7 +31,7 @@ const AboutUs = () => {
           <Grid
             container
             spacing={3}
-            style={{ border: "1px solid grey", borderRadius: "5px" }}
+            style={{ border: "1px solid #78828c21", borderRadius: "5px" }}
           >
             <Grid item xs={12}>
               <Grid container spacing={3}>
@@ -78,6 +78,16 @@ const AboutUs = () => {
               </Grid>
             </Grid>
           </Grid>
+        </Container>
+        <Container>
+          <InfoContent>
+            <Typography variant="subtitle1">
+              We believe that every traveler is unique, and that&apos;s why 
+              we don&apos;t believe in “one size fits all” vacations. Instead, we work closely with 
+              each client to create a personalized itinerary that is tailored to their individual 
+              preferences and vision. 
+            </Typography>
+          </InfoContent>
         </Container>
       </Container>
     </Box>
