@@ -16,26 +16,26 @@ import lightThemeOptions from "../../styles/theme/lightThemeOption";
 const clientSideEmotionCache = createEmotionCache();
 const lightTheme = createTheme(lightThemeOptions);
 
-type LayoutProps = {
-  children: React.ReactNode;
-  emotionCache?: EmotionCache;
-};
-
 export default function RootLayout({
   children,
-  emotionCache = clientSideEmotionCache,
-}: LayoutProps) {
-
+  params : {
+    emotionCache = clientSideEmotionCache
+  }
+}: {
+  children: React.ReactNode;
+  params: {
+    emotionCache?: EmotionCache;
+  }
+}) {
   return (
     <html lang="en">
       <body>
-        <CacheProvider value={emotionCache}>
-          <ThemeProvider theme={lightTheme}>
+         <CacheProvider value={emotionCache}>
+         <ThemeProvider theme={lightTheme}>
             <CssBaseline />
-
             {children}
           </ThemeProvider>
-        </CacheProvider>
+          </CacheProvider>
       </body>
     </html>
   );
