@@ -1,11 +1,8 @@
 "use client";
 
 import "./globals.css";
-import { Inter } from "next/font/google";
-import NavBar from "./components/NavBar";
 
 import * as React from "react";
-import type { AppProps } from "next/app";
 import { CacheProvider, EmotionCache } from "@emotion/react";
 import { ThemeProvider, CssBaseline, createTheme } from "@mui/material";
 
@@ -20,8 +17,6 @@ import lightThemeOptions from "../../styles/theme/lightThemeOption";
 const clientSideEmotionCache = createEmotionCache();
 const lightTheme = createTheme(lightThemeOptions);
 
-const inter = Inter({ subsets: ["latin"] });
-
 type LayoutProps = {
   children: React.ReactNode;
   emotionCache?: EmotionCache;
@@ -35,11 +30,10 @@ export default function RootLayout({
   console.log("testing", lightTheme);
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body>
         <CacheProvider value={emotionCache}>
           <ThemeProvider theme={lightTheme}>
             <CssBaseline />
-            <NavBar />
             {children}
           </ThemeProvider>
         </CacheProvider>

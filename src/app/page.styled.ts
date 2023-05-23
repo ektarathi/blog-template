@@ -1,4 +1,11 @@
 import { styled } from "@mui/system";
+
+export const StyledWrapper = styled('div')(({}) => ({
+    backgroundImage: 'url("https://mobirise.com/extensions/businessm4/travel-agency/assets/images/artiom-vallat-558027-unsplash-1519757244-94.181.200.62-1920x1280.jpg")',
+    backgroundSize: 'cover',
+    backgroundPosition: '50% 50%'
+}));
+
 export const MainHeading = styled('div')(({ theme }) => ({
     color: theme.palette.primary.dark,
     opacity: 0.9,

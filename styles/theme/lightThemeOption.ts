@@ -7,6 +7,9 @@ const lightThemeOptions: ThemeOptions = {
       main: '#ffffff',
       light: '#808080',
       dark: '#444444'
+    },
+    secondary: {
+      main: '#8d97ad'
     }
   },
 };

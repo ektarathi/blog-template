@@ -79,17 +79,14 @@
   margin: 0;
 }
 
-html,
-body {
+html {
   max-width: 100vw;
   overflow-x: hidden;
 }
 
 body {
+  max-width: 100vw;
   color: rgb(var(--foreground-rgb));
-  background-image: url("https://mobirise.com/extensions/businessm4/travel-agency/assets/images/artiom-vallat-558027-unsplash-1519757244-94.181.200.62-1920x1280.jpg");
-  background-size: cover;
-  background-position: 50% 50%;
 }
 
 a {

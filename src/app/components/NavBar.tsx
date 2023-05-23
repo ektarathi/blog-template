@@ -1,12 +1,7 @@
-import { Toolbar, Typography } from "@mui/material";
+import { Toolbar } from "@mui/material";
 import Link from "next/link";
 import * as React from "react";
 import { styled } from "@mui/system";
-
-const LogoWrapper = styled("div")({
-  flexGrow: "1",
-  cursor: "pointer",
-});
 
 const NavLinks = styled("div")({
   marginLeft: 10,
@@ -36,10 +31,7 @@ const NavBar = () => {
           <Link href="/">Home</Link>
         </MenuLink>
         <MenuLink>
-          <Link href="/about">About</Link>
-        </MenuLink>
-        <MenuLink>
-          <Link href="/contact">Contact</Link>
+          <Link href="#about">About</Link>
         </MenuLink>
       </NavLinks>
     </Toolbar>
