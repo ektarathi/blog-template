@@ -31,7 +31,7 @@ const NavBar = () => {
           <Link href="/">Home</Link>
         </MenuLink>
         <MenuLink>
-          <Link href="#about">About</Link>
+          <Link href="#journal">Journal</Link>
         </MenuLink>
       </NavLinks>
     </Toolbar>

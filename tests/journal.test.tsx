@@ -3,7 +3,7 @@ import { render, screen } from "@testing-library/react";
 
 import { ThemeProvider, createTheme } from "@mui/material";
 import lightThemeOptions from "../styles/theme/lightThemeOption";
-import AboutUs from "../src/app/about/about";
+import AboutUs from "../src/app/about/journal";
 
 describe("Page", () => {
   const lightTheme = createTheme(lightThemeOptions);

@@ -2,14 +2,14 @@ import * as React from "react";
 import Image from "next/image";
 
 import { Box, Typography, Container, Grid } from "@mui/material";
-import { MainHeading, SubTitle, SectionText } from "./about.styled";
+import { MainHeading, SubTitle, SectionText } from "./journal.styled";
 import topImage from "../../../public/images/khatam-tadayon-107740-1200x796.jpg";
 import leftImage from "../../../public/images/luca-bravo-121931-unsplash-1200x800.jpg";
 import rightImage from "../../../public/images/sho-hatakeyama-117306-unsplash-1200x800.jpg";
 
 const AboutUs = () => {
   return (
-    <Box data-testid="about-us" mt={5} id="about">
+    <Box data-testid="about-us" mt={5} id="journal">
       <Container>
         <Typography variant="h4" component="h1">
           <MainHeading data-testid="heading">Our Journal</MainHeading>

@@ -2,7 +2,7 @@
 
 import styles from "./page.module.css";
 import { Typography, Button } from "@mui/material";
-import AboutUs from "./about/about";
+import Journal from "./about/journal";
 import {
   MainHeading,
   StyledButton,
@@ -37,7 +37,7 @@ export default function Home() {
           </div>
         </main>
       </StyledWrapper>
-      <AboutUs />
+      <Journal />
     </>
   );
 }
