@@ -8,6 +8,8 @@ import {
   StyledButton,
   SubHeading,
   StyledWrapper,
+  OutlinedButton,
+  ColouredButton,
 } from "./page.styled";
 import NavBar from "./components/NavBar";
 
@@ -31,8 +33,12 @@ export default function Home() {
             </Typography>
 
             <StyledButton>
-              <Button>Buy Now</Button>
-              <Button> Ways to travel</Button>
+              <Button>
+                <ColouredButton>Buy Now</ColouredButton>
+              </Button>
+              <Button>
+                <OutlinedButton>Ways to travel</OutlinedButton>
+              </Button>
             </StyledButton>
           </div>
         </main>

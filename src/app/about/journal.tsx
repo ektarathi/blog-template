@@ -22,7 +22,7 @@ const AboutUs = () => {
           </SubTitle>
         </Typography>
         <Container>
-          <Grid container spacing={3} style={{ border: '1px solid grey' }}>
+          <Grid container spacing={3} style={{ border: '1px solid grey', borderRadius: '5px' }}>
             <Grid item xs={12}>
               <Grid container spacing={3}>
                 <Grid item sm={4}>
