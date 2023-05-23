@@ -1,7 +1,6 @@
 "use client";
 
 import "./globals.css";
-
 import * as React from "react";
 import { CacheProvider, EmotionCache } from "@emotion/react";
 import { ThemeProvider, CssBaseline, createTheme } from "@mui/material";
@@ -27,13 +26,13 @@ export default function RootLayout({
   emotionCache = clientSideEmotionCache,
 }: LayoutProps) {
 
-  console.log("testing", lightTheme);
   return (
     <html lang="en">
       <body>
         <CacheProvider value={emotionCache}>
           <ThemeProvider theme={lightTheme}>
             <CssBaseline />
+
             {children}
           </ThemeProvider>
         </CacheProvider>

@@ -38,6 +38,7 @@
     "typescript": "5.0.4"
   },
   "devDependencies": {
-    "jest-environment-jsdom": "^29.5.0"
+    "jest-environment-jsdom": "^29.5.0",
+    "jest-transform-stub": "^2.0.0"
   }
 }

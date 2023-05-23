@@ -13,7 +13,8 @@ const config: Config.InitialOptions = {
     moduleNameMapper: {
         'src/(.*)': '<rootDir>/src/$1',
         'tests/(.*)': '<rootDir>/tests/$1',
-        '\\.(css|less|scss|sass|png|jpg|ttf|woff|woff2)$': 'identity-obj-proxy',
+        '\\.(css|less|scss|sass)$': 'identity-obj-proxy',
+        "\\.(jpg|jpeg|png)$": "jest-transform-stub",
     },
 };
 
