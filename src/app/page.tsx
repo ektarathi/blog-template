@@ -2,7 +2,7 @@
 
 import styles from "./page.module.css";
 import { Typography, Button } from "@mui/material";
-import Journal from "./about/journal";
+import Journal from "./journal/journal";
 import {
   MainHeading,
   StyledButton,

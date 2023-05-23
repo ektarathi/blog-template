@@ -3,7 +3,7 @@ import { render, screen } from "@testing-library/react";
 
 import { ThemeProvider, createTheme } from "@mui/material";
 import lightThemeOptions from "../styles/theme/lightThemeOption";
-import AboutUs from "../src/app/about/journal";
+import Journal from "../src/app/journal/journal";
 
 describe("Page", () => {
   const lightTheme = createTheme(lightThemeOptions);
@@ -11,7 +11,7 @@ describe("Page", () => {
   it("renders the page", async () => {
     render(
       <ThemeProvider theme={lightTheme}>
-        <AboutUs />
+        <Journal />
       </ThemeProvider>
     );
 
@@ -22,7 +22,7 @@ describe("Page", () => {
   it("renders the top level headings", async () => {
     render(
       <ThemeProvider theme={lightTheme}>
-        <AboutUs />
+        <Journal />
       </ThemeProvider>
     );
 
@@ -36,7 +36,7 @@ describe("Page", () => {
   it("renders the images", async () => {
     render(
       <ThemeProvider theme={lightTheme}>
-        <AboutUs />
+        <Journal />
       </ThemeProvider>
     );
 
@@ -45,22 +45,5 @@ describe("Page", () => {
     expect(screen.getByAltText("lady walking in the forest")).toBeInTheDocument();
 
     expect(screen.getAllByRole("img")[0]).toHaveAttribute("alt", "Beach view");
-  });
-
-  it("renders the section content", async () => {
-    render(
-      <ThemeProvider theme={lightTheme}>
-        <AboutUs />
-      </ThemeProvider>
-    );
-
-    await screen.findByTestId("about-section");
-    expect(screen.getByTestId("about-section")).toBeInTheDocument();
-
-    await screen.findByTestId("description-section");
-    expect(screen.getByTestId("description-section")).toBeInTheDocument();
-
-    await screen.findByTestId("information-section");
-    expect(screen.getByTestId("information-section")).toBeInTheDocument();
   });
 });

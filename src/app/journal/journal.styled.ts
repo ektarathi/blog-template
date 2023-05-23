@@ -6,7 +6,8 @@ export const MainHeading = styled('div')(({ theme }) => ({
     fontStyle: 'normal',
     lineHeight: 1.2,
     fontSize: '1.8rem',
-    paddingBottom: theme.spacing(2)
+    paddingBottom: theme.spacing(2),
+    color: theme.palette.primary.dark
 }));
 
 export const SubTitle = styled('div')(({ theme }) => ({
@@ -18,5 +19,18 @@ export const SubTitle = styled('div')(({ theme }) => ({
 }));
 
 export const SectionText = styled('div')(({ theme }) => ({
-    color: theme.palette.secondary.main
+    color: theme.palette.secondary.main,
+    display: 'flex',
+    flexDirection: 'column',
+    "& .MuiIconButton-root:hover": {
+        backgroundColor: 'transparent'
+    }
 }));
+
+export const SectionHeading = styled('div')(({ theme }) => ({
+    color: theme.palette.primary.dark,
+    textAlign: 'center', 
+    textTransform: 'uppercase', 
+    paddingBottom: 1
+}));
+
