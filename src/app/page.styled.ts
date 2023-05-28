@@ -23,6 +23,7 @@ export const SubHeading = styled("div")({
   fontWeight: 300,
   lineHeight: 1.3,
   fontFamily: "'Montserrat', sans-serif",
+  textAlign: "center"
 });
 
 export const OutlinedButton = styled("div")(({ theme }) => ({

@@ -3,6 +3,7 @@
 import styles from "./page.module.css";
 import { Typography, Button } from "@mui/material";
 import Journal from "./journal/journal";
+import Feature from "./features/feature";
 import {
   MainHeading,
   StyledButton,
@@ -42,6 +43,7 @@ export default function Home() {
         </main>
       </StyledWrapper>
       <Journal />
+      <Feature />
     </>
   );
 }

@@ -27,6 +27,8 @@ export default function RootLayout({
     emotionCache?: EmotionCache;
   }
 }) {
+
+  console.log("sadaf", lightTheme.palette);
   return (
     <html lang="en">
       <body>

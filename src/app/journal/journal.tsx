@@ -22,7 +22,6 @@ const AboutUs = () => {
         <Typography variant="subtitle1">
           <SubTitle data-testid="subtitle">
             We are passionate about crafting unforgettable travel experiences{" "}
-            <br />
             that take you on a journey of relaxation, exploration and indulgence{" "}
             <br /> in some of the world&apos;s most breathtaking destinations.
           </SubTitle>
@@ -35,7 +34,7 @@ const AboutUs = () => {
           >
             <Grid item xs={12}>
               <Grid container spacing={3}>
-                <Grid item sm={4}>
+                <Grid item sm={4} style={{ padding: 0 }}>
                   <Box>
                     <AboutSection />
                   </Box>
@@ -47,7 +46,7 @@ const AboutUs = () => {
                     style={{ width: "100%", height: "100%" }}
                   />
                 </Grid>
-                <Grid item sm={4}>
+                <Grid item sm={4} style={{ padding: 0 }}>
                   <Box>
                     <SupportSection />
                   </Box>
@@ -63,7 +62,7 @@ const AboutUs = () => {
                     style={{ width: "100%", height: "100%" }}
                   />
                 </Grid>
-                <Grid item sm={4}>
+                <Grid item sm={4} style={{ padding: 0 }}>
                   <Box>
                    <ServiceSection/>
                   </Box>

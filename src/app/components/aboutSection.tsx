@@ -18,6 +18,7 @@ const AboutSection = () => {
             height: "70px",
             display: "flex",
             alignSelf: "center",
+            marginTop: '12px'
           }}
         />
       </IconButton>
@@ -26,10 +27,9 @@ const AboutSection = () => {
           Memories that will last <br /> for a Life Time
         </SectionHeading>
       </Typography>
-      <Typography variant="body2">
-        We&apos;ll help you create beautiful memories and capture
-        <br /> them in a stunning photos to bring home.
-        <br /> Memories that will last forever and ever.
+      <Typography variant="body2" style={{ padding: 15 }}>
+        We&apos;ll help you create beautiful memories and capture them in a stunning photos to bring home.
+        Memories that will last forever and ever.
       </Typography>
     </SectionText>
   );
