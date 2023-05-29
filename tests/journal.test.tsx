@@ -5,7 +5,7 @@ import { ThemeProvider, createTheme } from "@mui/material";
 import lightThemeOptions from "../styles/theme/lightThemeOption";
 import Journal from "../src/app/journal/journal";
 
-describe("Page", () => {
+describe("Journal Page", () => {
   const lightTheme = createTheme(lightThemeOptions);
 
   it("renders the page", async () => {
