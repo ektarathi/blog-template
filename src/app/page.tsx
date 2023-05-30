@@ -4,6 +4,7 @@ import styles from "./page.module.css";
 import { Typography, Button } from "@mui/material";
 import Journal from "./journal/journal";
 import Feature from "./features/feature";
+import Facility from "./facilities/facility";
 import {
   MainHeading,
   StyledButton,
@@ -44,6 +45,7 @@ export default function Home() {
       </StyledWrapper>
       <Journal />
       <Feature />
+      <Facility/>
     </>
   );
 }

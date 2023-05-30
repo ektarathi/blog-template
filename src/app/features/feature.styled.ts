@@ -2,7 +2,8 @@ import { styled } from "@mui/system";
 
 export const StyledWrapper = styled("div")(({ theme }) => ({
     backgroundColor: "#f4f8fa",
-    paddingTop: 30
+    paddingTop: 40,
+    paddingBottom: 40
   }));
 
   export const LeftContent = styled("div")(({ theme }) => ({
