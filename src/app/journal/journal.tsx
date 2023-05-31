@@ -71,56 +71,6 @@ const Journal = () => {
               />
             </Grid>
           </Grid>
-          {/*<Grid
-            container
-            spacing={3}
-            style={{ border: "1px solid #78828c21", borderRadius: "5px" }}
-          >
-            <Grid item xs={12}>
-              <Grid container spacing={3}>
-                <Grid item sm={4} style={{ padding: 0 }}>
-                  <Box>
-                    <AboutSection />
-                  </Box>
-                </Grid>
-                <Grid item sm={4} style={{ padding: 0 }}>
-                  <Image
-                    src={topImage}
-                    alt="Beach view"
-                    style={{ width: "100%", height: "100%" }}
-                  />
-                </Grid>
-                <Grid item sm={4} style={{ padding: 0 }}>
-                  <Box>
-                    <SupportSection />
-                  </Box>
-                </Grid>
-              </Grid>
-            </Grid>
-            <Grid item xs={12}>
-              <Grid container spacing={3}>
-                <Grid item sm={4} style={{ padding: 0 }}>
-                  <Image
-                    src={leftImage}
-                    alt="White mountains"
-                    style={{ width: "100%", height: "100%" }}
-                  />
-                </Grid>
-                <Grid item sm={4} style={{ padding: 0 }}>
-                  <Box>
-                   <ServiceSection/>
-                  </Box>
-                </Grid>
-                <Grid item sm={4} style={{ padding: 0 }}>
-                  <Image
-                    src={rightImage}
-                    alt="lady walking in the forest"
-                    style={{ width: "100%", height: "100%" }}
-                  />
-                </Grid>
-              </Grid>
-            </Grid>
-  </Grid>*/}
         </Box>
         <InfoContent>
           <Typography variant="subtitle1">
