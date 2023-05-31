@@ -13,6 +13,7 @@ import {
   OutlinedButton,
   ColouredButton,
 } from "./page.styled";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -37,7 +38,8 @@ export default function Home() {
                 <ColouredButton>Buy Now</ColouredButton>
               </Button>
               <Button>
-                <OutlinedButton>Ways to travel</OutlinedButton>
+                <OutlinedButton>
+                  <Link href="#ways-to-travel">Ways to trave</Link>l</OutlinedButton>
               </Button>
             </StyledButton>
           </div>

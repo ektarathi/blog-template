@@ -6,7 +6,7 @@ const Feature = () => {
   return (
     <StyledWrapper
       data-testid="features"
-      id="feature"
+      id="ways-to-travel"
     >
       <Container>
         <Grid container spacing={3}>

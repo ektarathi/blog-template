@@ -12,6 +12,8 @@ import AboutSection from "../components/aboutSection";
 import SupportSection from "../components/supportSection";
 import ServiceSection from "../components/servicesSection";
 
+console.log("sadsad", topImage);
+
 const Journal = () => {
   return (
     <Box data-testid="about-us" mt={5} id="journal">
