@@ -13,9 +13,16 @@ import {
   OutlinedButton,
   ColouredButton,
 } from "./page.styled";
-import Link from "next/link";
+
+import { useRouter } from 'next/navigation';
 
 export default function Home() {
+  const router = useRouter();
+  
+  const openModal = () => {
+    router.push(`#ways-to-travel`);
+  } 
+
   return (
     <>
       <StyledWrapper>
@@ -38,8 +45,7 @@ export default function Home() {
                 <ColouredButton>Buy Now</ColouredButton>
               </Button>
               <Button>
-                <OutlinedButton>
-                  <Link href="#ways-to-travel">Ways to trave</Link>l</OutlinedButton>
+                <OutlinedButton onClick={openModal}>Ways to travel</OutlinedButton>
               </Button>
             </StyledButton>
           </div>
