@@ -1,5 +1,7 @@
 "use client";
 
+import { motion } from "framer-motion";
+
 import styles from "./page.module.css";
 import { Typography, Button } from "@mui/material";
 import Journal from "./journal/journal";
@@ -14,14 +16,14 @@ import {
   ColouredButton,
 } from "./page.styled";
 
-import { useRouter } from 'next/navigation';
+import { useRouter } from "next/navigation";
 
 export default function Home() {
   const router = useRouter();
-  
+
   const openModal = () => {
     router.push(`#ways-to-travel`);
-  } 
+  };
 
   return (
     <>
@@ -41,19 +43,39 @@ export default function Home() {
             </Typography>
 
             <StyledButton>
-              <Button>
-                <ColouredButton>Buy Now</ColouredButton>
-              </Button>
-              <Button>
-                <OutlinedButton onClick={openModal}>Ways to travel</OutlinedButton>
-              </Button>
+              <motion.div
+                className="animatable"
+                whileHover={{
+                  scale: 1.2,
+                  transition: { duration: 0.3 },
+                }}
+                whileTap={{ scale: 0.9 }}
+              >
+                <Button className="animatable">
+                  <ColouredButton>Buy Now</ColouredButton>
+                </Button>
+              </motion.div>
+              <motion.div
+                className="animatable"
+                whileHover={{
+                  scale: 1.2,
+                  transition: { duration: 0.3 },
+                }}
+                whileTap={{ scale: 0.9 }}
+              >
+                <Button className="animatable">
+                  <OutlinedButton onClick={openModal}>
+                    Ways to travel
+                  </OutlinedButton>
+                </Button>
+              </motion.div>
             </StyledButton>
           </div>
         </main>
       </StyledWrapper>
       <Journal />
       <Feature />
-      <Facility/>
+      <Facility />
     </>
   );
 }
