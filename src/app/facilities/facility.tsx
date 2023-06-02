@@ -1,5 +1,6 @@
 import Image from "next/image";
 import * as React from "react";
+import { motion } from "framer-motion";
 
 import { Grid, Typography, Container } from "@mui/material";
 import {
@@ -12,7 +13,13 @@ import {
 import airTravel from "../../../public/images/travel_air.jpeg";
 import trainTravel from "../../../public/images/travel_train.jpeg";
 
+const hiddenMask = `repeating-linear-gradient(to right, rgba(0,0,0,0) 0px, rgba(0,0,0,0) 30px, rgba(0,0,0,1) 30px, rgba(0,0,0,1) 30px)`;
+const visibleMask = `repeating-linear-gradient(to right, rgba(0,0,0,0) 0px, rgba(0,0,0,0) 0px, rgba(0,0,0,1) 0px, rgba(0,0,0,1) 30px)`;
+
 const FacilitySection = () => {
+  const [isLoaded, setIsLoaded] = React.useState(false);
+  const [isInView, setIsInView] = React.useState(false);
+
   return (
     <StyledWrapper>
       <Container>
@@ -30,16 +37,29 @@ const FacilitySection = () => {
           </Grid>
           <Grid item sm={4}>
             <SectionContent>
-              <Image
-                src={airTravel}
-                alt="Travel By Air"
-                style={{
-                  width: "100%",
-                  height: "100%",
-                  borderRadius: 10,
-                  marginBottom: 20,
-                }}
-              />
+              <motion.div
+                initial={false}
+                animate={
+                  isLoaded && isInView
+                    ? { WebkitMaskImage: visibleMask, maskImage: visibleMask }
+                    : { WebkitMaskImage: hiddenMask, maskImage: hiddenMask }
+                }
+                transition={{ duration: 1, delay: 1 }}
+                viewport={{ once: true }}
+                onViewportEnter={() => setIsInView(true)}
+              >
+                <Image
+                  src={airTravel}
+                  alt="Travel By Air"
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    borderRadius: 10,
+                    marginBottom: 20,
+                  }}
+                  onLoad={() => setIsLoaded(true)}
+                />
+              </motion.div>
               <Typography variant="h6" data-testid="travel-air-heading">
                 Travel by Air
               </Typography>
@@ -54,16 +74,29 @@ const FacilitySection = () => {
           </Grid>
           <Grid item sm={4}>
             <SectionContent>
-              <Image
-                src={trainTravel}
-                alt="Travel By Train"
-                style={{
-                  width: "100%",
-                  height: "100%",
-                  borderRadius: 10,
-                  marginBottom: 20,
-                }}
-              />
+              <motion.div
+                initial={false}
+                animate={
+                  isLoaded && isInView
+                    ? { WebkitMaskImage: visibleMask, maskImage: visibleMask }
+                    : { WebkitMaskImage: hiddenMask, maskImage: hiddenMask }
+                }
+                transition={{ duration: 1, delay: 1 }}
+                viewport={{ once: true }}
+                onViewportEnter={() => setIsInView(true)}
+              >
+                <Image
+                  src={trainTravel}
+                  alt="Travel By Train"
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    borderRadius: 10,
+                    marginBottom: 20,
+                  }}
+                  onLoad={() => setIsLoaded(true)}
+                />
+              </motion.div>
               <Typography variant="h6" data-testid="travel-train-heading">
                 Travel by Train
               </Typography>
