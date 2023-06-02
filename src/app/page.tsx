@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, useScroll } from "framer-motion";
 
 import styles from "./page.module.css";
 import { Typography, Button } from "@mui/material";
@@ -20,6 +20,7 @@ import { useRouter } from "next/navigation";
 
 export default function Home() {
   const router = useRouter();
+  const { scrollYProgress } = useScroll();
 
   const openModal = () => {
     router.push(`#ways-to-travel`);
@@ -27,6 +28,10 @@ export default function Home() {
 
   return (
     <>
+    <motion.div
+        className={styles.progressBar}
+        style={{ scaleX: scrollYProgress }}
+      />
       <StyledWrapper>
         <main className={styles.main} data-testid="main-section">
           <div className={styles.center}>
