@@ -69,7 +69,7 @@ export default function Home() {
                 whileTap={{ scale: 0.9 }}
               >
                 <Button className="animatable">
-                  <OutlinedButton onClick={openModal}>
+                  <OutlinedButton onClick={openModal} date-testid="click-button">
                     Ways to travel
                   </OutlinedButton>
                 </Button>

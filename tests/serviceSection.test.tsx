@@ -5,6 +5,16 @@ import { ThemeProvider, createTheme } from "@mui/material";
 import lightThemeOptions from "../styles/theme/lightThemeOption";
 import ServiceSection from "../src/app/components/servicesSection";
 
+import "intersection-observer";
+
+jest.mock('next/image', () => ({
+  __esModule: true,
+  default: (props: any) => {
+    // eslint-disable-next-line @next/next/no-img-element, jsx-a11y/alt-text
+    return <img {...props} />
+  },
+}))
+
 describe("Service Section", () => {
   const lightTheme = createTheme(lightThemeOptions);
 

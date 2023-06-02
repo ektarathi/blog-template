@@ -21,7 +21,7 @@ const FacilitySection = () => {
   const [isInView, setIsInView] = React.useState(false);
 
   return (
-    <StyledWrapper>
+    <StyledWrapper data-testid="facility">
       <Container>
         <Grid container spacing={3}>
           <Grid item sm={4}>

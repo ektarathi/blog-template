@@ -5,6 +5,16 @@ import { ThemeProvider, createTheme } from "@mui/material";
 import lightThemeOptions from "../styles/theme/lightThemeOption";
 import Journal from "../src/app/journal/journal";
 
+import "intersection-observer";
+
+jest.mock('next/image', () => ({
+  __esModule: true,
+  default: (props: any) => {
+    // eslint-disable-next-line @next/next/no-img-element, jsx-a11y/alt-text
+    return <img {...props} />
+  },
+}))
+
 describe("Journal Page", () => {
   const lightTheme = createTheme(lightThemeOptions);
 

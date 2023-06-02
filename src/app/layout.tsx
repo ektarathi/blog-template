@@ -2,6 +2,7 @@
 
 import "./globals.css";
 import * as React from "react";
+
 import { CacheProvider, EmotionCache } from "@emotion/react";
 import { ThemeProvider, CssBaseline, createTheme } from "@mui/material";
 
@@ -28,7 +29,6 @@ export default function RootLayout({
   }
 }) {
 
-  console.log("sadaf", lightTheme.palette);
   return (
     <html lang="en">
       <body>
