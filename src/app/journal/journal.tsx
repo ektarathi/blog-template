@@ -42,6 +42,7 @@ const Journal = () => {
                 alt="Beach view"
                 style={{ width: "100%", height: "100%" }}
                 data-testid="image-top"
+                priority={true} 
               />
             </Grid>
             <Grid item xs={4}>
@@ -60,6 +61,7 @@ const Journal = () => {
                 alt="White mountains"
                 style={{ width: "100%", height: "100%" , borderBottomLeftRadius: "5px"}}
                 data-testid="image-left"
+                priority={true} 
               />
             </Grid>
             <Grid item xs={2} sm={4} md={4}>
@@ -71,6 +73,7 @@ const Journal = () => {
                 alt="lady walking in the forest"
                 style={{ width: "100%", height: "100%", borderBottomRightRadius: "5px" }}
                 data-testid="image-right"
+                priority={true} 
               />
             </Grid>
           </Grid>

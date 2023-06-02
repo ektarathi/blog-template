@@ -7,6 +7,15 @@ import lightThemeOptions from "../styles/theme/lightThemeOption";
 
 import "intersection-observer";
 
+jest.mock('next/image', () => ({
+    __esModule: true,
+    default: (props: any) => {
+      let value = true;
+      // eslint-disable-next-line @next/next/no-img-element, jsx-a11y/alt-text
+      return <img {...props} priority={value.toString()} />
+    },
+}))
+  
 describe("Facility Page", () => {
   const lightTheme = createTheme(lightThemeOptions);
 

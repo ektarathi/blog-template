@@ -7,14 +7,6 @@ import AboutUs from "../src/app/components/aboutSection";
 
 import "intersection-observer";
 
-jest.mock('next/image', () => ({
-  __esModule: true,
-  default: (props: any) => {
-    // eslint-disable-next-line @next/next/no-img-element, jsx-a11y/alt-text
-    return <img {...props} />
-  },
-}))
-
 describe("About Section", () => {
   const lightTheme = createTheme(lightThemeOptions);
 

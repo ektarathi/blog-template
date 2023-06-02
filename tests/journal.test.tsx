@@ -5,13 +5,16 @@ import { ThemeProvider, createTheme } from "@mui/material";
 import lightThemeOptions from "../styles/theme/lightThemeOption";
 import Journal from "../src/app/journal/journal";
 
+import topImage from "../../../public/images/khatam-tadayon-107740-1200x796.jpg";
+
 import "intersection-observer";
 
 jest.mock('next/image', () => ({
   __esModule: true,
   default: (props: any) => {
+    let value = true;
     // eslint-disable-next-line @next/next/no-img-element, jsx-a11y/alt-text
-    return <img {...props} />
+    return <img {...props} priority={value.toString()} />
   },
 }))
 

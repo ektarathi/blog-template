@@ -5,8 +5,6 @@ import Feature from "../src/app/features/feature";
 import { ThemeProvider, createTheme } from "@mui/material";
 import lightThemeOptions from "../styles/theme/lightThemeOption";
 
-import "intersection-observer";
-
 describe("Feature Page", () => {
   const lightTheme = createTheme(lightThemeOptions);
 
