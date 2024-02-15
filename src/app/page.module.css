@@ -23,8 +23,8 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 10px;
-  background: #ff0055;
+  height: 5px;
+  background: linear-gradient(45deg, #1dc9cb, #2bdc9d);
   transform-origin: 0%;
 }
 

@@ -43,7 +43,7 @@ export const ColouredButton = styled("div")(({ theme }) => ({
   borderColor: theme.palette.primary.light,
   color: theme.palette.primary.light,
   margin: ".4rem .8rem",
-  padding: ".5rem 2rem",
+  padding: ".6rem 2rem",
   fontWeight: 400,
   textTransform: "capitalize",
   borderRadius: '5px'

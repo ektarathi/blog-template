@@ -26,6 +26,10 @@ export default function Home() {
     router.push(`#ways-to-travel`);
   };
 
+  const openJornalModal = () => {
+    router.push(`#journal`);
+  };
+
   return (
     <>
     <motion.div
@@ -57,7 +61,7 @@ export default function Home() {
                 whileTap={{ scale: 0.9 }}
               >
                 <Button className="animatable">
-                  <ColouredButton>Buy Now</ColouredButton>
+                  <ColouredButton onClick={openJornalModal}>Journal Info</ColouredButton>
                 </Button>
               </motion.div>
               <motion.div
