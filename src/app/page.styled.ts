@@ -21,7 +21,7 @@ export const SubHeading = styled("div")({
   opacity: 1,
   fontSize: "1.8rem",
   fontWeight: 300,
-  lineHeight: 1.3,
+  lineHeight: 1.5,
   fontFamily: "'Montserrat', sans-serif",
   textAlign: "center"
 });
